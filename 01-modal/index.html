@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JavaScript</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(148, 255, 230);
+            
+        }
+
+        .modal{
+            position: absolute;
+            top: 20%;
+            left: 35%;
+            background-color: white;
+            width: 400px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            padding: 10px;
+            z-index: 1;
+        }
+
+        .close{
+            width: 20px;
+            height: 20px;
+        }
+
+        .overlay{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            filter: blur(90px);
+            background-color: rgb(30, 74, 62);
+        }
+
+        .show-modal{
+            width: 100px;
+            height: 30px;
+            background-color: rgb(16, 101, 3);
+            border: none;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .hidden{
+            display: none;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="main">
+
+        <button class="show-modal">Open modal 1</button>
+        <button class="show-modal">Open modal 2</button>
+        <button class="show-modal">Open modal 3</button>
+
+        <div class="modal hidden">
+            <button class="close">X</button>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Sequi rerum quaerat architecto! Perferendis ab itaque
+                corrupti quae culpa eaque est repudiandae eum. Nulla ducimus dolorum
+                totam dolor consequuntur voluptatum neque, quis doloremque, ipsum
+                voluptatibus quos esse impedit ipsa laborum facere commodi aspernatur ratione alias id!
+                Dicta iusto minus laudantium deleniti!
+            </p>
+        </div>
+        <div class="overlay hidden"></div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
