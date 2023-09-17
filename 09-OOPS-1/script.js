@@ -1,6 +1,5 @@
 'use strict'
 
-
 // Create Instance/object using constructor
 
 const Person = function (firstName, birthYear) {
