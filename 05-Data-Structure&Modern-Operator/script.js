@@ -116,7 +116,7 @@ const restaurant = {
 
 // const obj = { a: 10, b: 20, c: 30 };
 
-// // {a,b} = obj this line of code will produce error because create block after "{", in that case we need ti wrap in braces
+// // {a,b} = obj; => this line of code will produce error because create block after "{", in that case we need ti wrap in braces
 
 // ({ a, b } = obj);
 

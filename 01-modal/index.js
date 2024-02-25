@@ -1,15 +1,13 @@
 
-/*
-
+/* 
 fullName = 'Aman Singh'
 console.log(fullName);
-console.log(2**3);
-
-*/
+console.log(2**3*2**2);
+*/ 
 
 // type conversion
 
-/* 
+/*
 const year = '1998';
 console.log(Number(year), year);
 console.log(year + 20); // 199820
@@ -128,32 +126,34 @@ console.log(person.fullname()); //undefined undefined
 
 */
 
-const overlay = document.querySelector('.overlay');
-const modal = document.querySelector('.modal')
-const clickBtn = document.querySelectorAll('.show-modal');
-const closeBtn = document.querySelector('.close')
+// const overlay = document.querySelector('.overlay');
+// const modal = document.querySelector('.modal')
+// const clickBtn = document.querySelectorAll('.show-modal');
+// const closeBtn = document.querySelector('.close')
 
-const closeModal = function () {
-    modal.classList.add('hidden')
-    overlay.classList.add('hidden')
-}
+// const closeModal = function () {
+//     modal.classList.add('hidden')
+//     overlay.classList.add('hidden')
+// }
 
-const openModal = function () {
-    modal.classList.remove('hidden');
-    overlay.classList.remove('hidden');
-}
+// const openModal = function (e) {
+    
+//     modal.classList.remove('hidden');
+//     overlay.classList.remove('hidden');
+//     modal.lastElementChild.innerText = e.target.innerText;
+// }
 
-for (let i = 0; i < clickBtn.length; i++){
-    clickBtn[i].addEventListener('click', openModal)
-}
+// for (let i = 0; i < clickBtn.length; i++){
+//     clickBtn[i].addEventListener('click', openModal)
+// }
 
 
-overlay.addEventListener('click', closeModal)
-closeBtn.addEventListener('click', closeModal)
+// overlay.addEventListener('click', closeModal)
+// closeBtn.addEventListener('click', closeModal)
 
-document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-        closeModal();
-    }
-})
+// document.addEventListener('keydown', function (e) {
+//     if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+//         closeModal();
+//     }
+// })
 

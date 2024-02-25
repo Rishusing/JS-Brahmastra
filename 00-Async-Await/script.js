@@ -2,8 +2,8 @@
 // let delay1 = 2000;
 // let delay2 = 2000;
 
-let delay1 = 4000;
-let delay2 = 2000;
+let delay1 = 2000;
+let delay2 = 4000;
 
 // let delay1 = 2000;
 // let delay2 = 4000;
@@ -24,7 +24,7 @@ const p2 = new Promise((resolve, reject) => {
 
 async function handlePromise() {
     console.log('Hello');
-    
+
     const val1 = await p1;
     console.log(val1);
 
@@ -32,4 +32,4 @@ async function handlePromise() {
     console.log(val2);
 }
 
-handlePromise()
+handlePromise();

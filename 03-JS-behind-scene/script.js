@@ -84,7 +84,6 @@ var addArow = (a, b) => a + b;
 //         console.log(this);
 //         return 2023 - this.birthYear
 //     }
-
 // }
 
 // console.log(person.calAge());
@@ -108,6 +107,7 @@ var addArow = (a, b) => a + b;
 
 // sanjay.calAge = rishu.calAge;
 
+// console.log(sanjay);
 // console.log(sanjay.calAge());
 
 // ---------------------------------------------------------------------
@@ -122,7 +122,7 @@ var addArow = (a, b) => a + b;
 // }
 
 // const fn = person.calAge;
-// console.log(fn);
+// // console.log(fn);
 // fn(); //undefines and TypeError
 
 // -------------------------------------------------------------------
@@ -130,7 +130,7 @@ var addArow = (a, b) => a + b;
 // const jonas = {
 //     fullname: 'Jonas Singh',
 //     birthYear: 2001,
-    
+
 //     calAge: function () {
 
 //         console.log(this);
@@ -140,7 +140,7 @@ var addArow = (a, b) => a + b;
 //         }
 //         fn1();
 
-//         const fn2 =  () => {
+//         const fn2 = () => {
 //             console.log(this);
 //         }
 //         fn2();
@@ -214,23 +214,23 @@ var addArow = (a, b) => a + b;
 
 
 
-const phone1 = {
-    brand: 'Iphone',
-    model: '14',
-    features: ['4GB RAM', '128GB ROM'],
-    battery: {
-        mAh : 4200
-    }
-}
+// const phone1 = {
+//     brand: 'Iphone',
+//     model: '14',
+//     features: ['4GB RAM', '128GB ROM'],
+//     battery: {
+//         mAh : 4200
+//     }
+// }
 
 
-const phone2 = Object.assign({}, phone1);
+// const phone2 = Object.assign({}, phone1);
 
-phone2.features.push('50MP')
+// phone2.features.push('50MP')
 
-phone2.model = '12 pro'
-phone2.battery.mAh = 3800;
+// phone2.model = '12'
+// phone2.battery.mAh = 3800;
 
-console.log(phone1);
-console.log(phone2);
+// console.log(phone1);
+// console.log(phone2);
 

@@ -48,4 +48,3 @@ const option = {
 const observer = new IntersectionObserver(obsCallBack, option)
 observer.observe(document.querySelector('#viewpoint'))
 
-
