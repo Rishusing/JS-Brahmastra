@@ -196,41 +196,50 @@ var addArow = (a, b) => a + b;
 // In below example you can see that only person2.firstName changing, not the first one.
 
 
-// const person1 = {
-//     firstName: 'Rishu',
-//     lastName: 'Singh',
-//     age: 26
-// }
+const person1 = {
+    firstName: 'Rishu',
+    lastName: 'Singh',
+    age: 26
+}
 
-// const person2 = Object.assign({}, person1);
+const person2 = Object.assign({}, person1);
 
-// person2.firstName = 'Rohit'
+person2.firstName = 'Rohit'
 
-// console.log(person1);
-// console.log(person2);
+console.log(person1);
+console.log(person2);
 
 // But one thing more, run and see the below example
 // you can see model property is changing in only in phone2 but if we pushing the one extra element in features, then both object having that element (Same for battery.mAh property)
 
 
 
-// const phone1 = {
-//     brand: 'Iphone',
-//     model: '14',
-//     features: ['4GB RAM', '128GB ROM'],
-//     battery: {
-//         mAh : 4200
-//     }
-// }
+const phone1 = {
+    brand: 'Iphone',
+    model: '14',
+    features: ['4GB RAM', '128GB ROM'],
+    battery: {
+        mAh: 4200
+    }
+}
 
 
-// const phone2 = Object.assign({}, phone1);
+const phone2 = Object.assign({}, phone1);
+// const phone2 = {...phone1}
 
-// phone2.features.push('50MP')
+phone2.features.push('50MP')
 
-// phone2.model = '12'
-// phone2.battery.mAh = 3800;
+phone2.model = '12'
+phone2.battery.mAh = 3800;
 
-// console.log(phone1);
-// console.log(phone2);
+console.log(phone1);
+console.log(phone2);
 
+// console.log({ name: 'rishu' } == { name: 'rishu' });
+
+// Reversing a string
+
+var str = 'rishusingh'
+
+var newstr = str.split('').reverse().join('')
+console.log(newstr);

@@ -100,7 +100,7 @@ const restaurant = {
 // console.log([starter, mainCourse]);
 // console.log(dishes);
 
-// Object destructure-----------------------------------------------------
+// Object destructure -----------------------------------------------------
 // const { name, openingHours, categories } = restaurant;
 // const { name: restaurantName, openingHours, categories } = restaurant; // rename the keys
 
@@ -116,7 +116,7 @@ const restaurant = {
 
 // const obj = { a: 10, b: 20, c: 30 };
 
-// // {a,b} = obj; => this line of code will produce error because create block after "{", in that case we need ti wrap in braces
+// // {a,b} = obj; => this line of code will produce error because create block after "{", in that case we need to wrap in braces
 
 // ({ a, b } = obj);
 
@@ -159,6 +159,7 @@ const restaurant = {
 
 // Questions of spread operator
 // const str = 'rishu';
+// console.log(Object.keys(str));
 // const obj = { ...str };
 // console.log(obj);
 
@@ -167,7 +168,7 @@ const restaurant = {
 // console.log(obj1);
 // As we know array is an object will default keys as 0,1,2,3;
 // console.log(Object.keys(arr)); // ['0', '1', '2']
-// therefor we obj1 will have keys as 0,1,2 and output will { 0: 'a', 1: 'b', 2: 'c', 3: 'd'}
+// therefore, obj1 will have keys as 0,1,2 and output will { 0: 'a', 1: 'b', 2: 'c', 3: 'd'}
 
 
 
@@ -185,7 +186,7 @@ const restaurant = {
 // console.log(newArray);
 
 // const array = ['Rishu', 'Sachin', 'Mradul', 'Manvendra', 'Rohit', 'Nikhil'];
-// const [a, b, ...[c, d]] = array;
+// const [a, b, ...[c, ,d]] = array;
 // console.log(c, d);
 
 // const [p, q, ...[r, ...s]] = array;
@@ -229,7 +230,7 @@ console.log('---------------The Nullish Coalescing Operator (??)----------------
 // Nullish: undefined and null (NOT 0 and '')
 
 var x = 0;
-console.log(x ?? 10); // 0
+console.log(x ?? 10 ?? null); // 0
 
 var y;
 console.log(y ?? 10); // 10
@@ -263,6 +264,7 @@ if (restaurant.openingHours && restaurant.openingHours.mon) { // if openingHours
 
 console.log(restaurant.openingHours.mon?.open); // if property before ? exist then only next property will be read.
 console.log(restaurant.openingHours?.mon?.open);
+console.log(restaurant.openingHours?.thu);
 
 
 

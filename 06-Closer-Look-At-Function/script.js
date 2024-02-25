@@ -103,19 +103,19 @@ const fns = function () {
 
 // Using arrow function-----------------------------------
 
-// const greet = (greeting) => {
-//     return (name) => {
-//         console.log(`${greeting} ${name}`);
-//     }
-// }
+const greet = (greeting) => {
+    return (name) => {
+        console.log(`${greeting} ${name}`);
+    }
+}
 
 // const greet =  (greeting) => (name) => {console.log(`${greeting} ${name}`)}
-// const HelloGreet = greet('You are osm');
-// HelloGreet('Rohit');
-// greet('You are smart')('Nikhil');
+const HelloGreet = greet('You are osm');
+HelloGreet('Rohit');
+greet('You are smart')('Nikhil');
 
-// const sumAll = (a) => (b) => (c) => (d) => (e) => a + b + c + d + e;
-// console.log(sumAll(1)(2)(3)(4)(5));
+const sumAll = (a) => (b) => (c) => (d) => (e) => a + b + c + d + e;
+console.log(sumAll(1)(2)(3)(4)(5));
 
 
 // call() function: this function is basically used to point "this" keyword from other object.
